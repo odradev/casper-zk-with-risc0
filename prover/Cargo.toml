@@ -1,0 +1,9 @@
+[package]
+name = "prover"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+methods = { path = "../methods" }
+risc0-zkvm = { git = "https://github.com/risc0/risc0.git" }
+serde_json = "*"

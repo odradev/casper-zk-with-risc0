@@ -1,0 +1,14 @@
+[package]
+name = "verifier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+risc0-zkvm = { git = "https://github.com/risc0/risc0.git", default-features = false }
+odra = { version = "0.2.0", default-features = false }
+wasm-soft-float-bs = { path = "../../wasm-float-transpiler/backends/bs/" }
+
+[features]
+default = ["mock-vm"]
+mock-vm = ["odra/mock-vm"]
+casper = ["odra/casper"]

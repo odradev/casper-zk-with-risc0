@@ -1,0 +1,9 @@
+**/target
+data/journal
+data/seal
+data/method
+keys/public_key_hex
+keys/public_key.pem
+keys/secret_key.pem
+risc0
+deploy

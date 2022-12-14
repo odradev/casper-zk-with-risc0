@@ -1,0 +1,11 @@
+[package]
+name = "guest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+risc0-zkvm = { git = "https://github.com/risc0/risc0.git", default-features = false }
+
+[[bin]]
+name = "multiply"
+path = "src/multiply.rs" 
