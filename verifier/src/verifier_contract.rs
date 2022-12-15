@@ -24,6 +24,11 @@ impl Verifier {
     pub fn result(&self) -> String {
         self.result.get().unwrap_or(String::from("Not processed"))
     }
+
+    pub fn verify_proof(&mut self, journal: Vec<u32>, seal: Vec<u32>) {
+        let result = verify(&journal, &seal, METHOD_ID);
+        self.result.set(result);
+    }
 }
 
 // The verification method. It constructs new Receipt and verifies it.

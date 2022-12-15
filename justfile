@@ -9,16 +9,13 @@ prove:
 build:
     cd verifier && cargo odra build -b casper
 
-correct-wasm:
-    wasm-float-transpiler {{WASM_FILE}} {{WASM_FILE}}
-
 test-mock-vm:
     cd verifier && cargo odra test
 
 only-test:
     cd verifier && cargo odra test -b casper --skip-build
 
-test: build correct-wasm only-test
+test: build only-test
 
 run: prove build test
 
@@ -41,5 +38,5 @@ call-verify VERIFIER_HASH:
 
 clean:
     cd prover && cargo clean
-    cd verifier && cargo clean
+    cd verifier && cargo odra clean
     cd methods && cargo clean

@@ -7,7 +7,6 @@ See [this blog post](https://odra.dev/blog/casper-zk-risc0) for full story.
 You should install:
 - just
 - wabt
-- [wasm-float-transpiler](https://github.com/chipshort/wasm-float-transpiler)
 - [cargo-odra](https://github.com/odradev/cargo-odra)
 - [casper-client](https://crates.io/crates/casper-client)
 

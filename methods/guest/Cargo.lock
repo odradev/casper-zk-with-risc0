@@ -275,7 +275,7 @@ checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
 [[package]]
 name = "risc0-circuit-rv32im"
 version = "1.0.0-rc.2"
-source = "git+https://github.com/risc0/risc0.git#59297ead6aed1e4194c65cfcce1642b17b6177d1"
+source = "git+https://github.com/risc0/risc0.git?rev=9a3865a#9a3865a5a54ec1e974250c785545a6bf727f6949"
 dependencies = [
  "anyhow",
  "cc",
@@ -291,7 +291,7 @@ dependencies = [
 [[package]]
 name = "risc0-zeroio"
 version = "1.0.0-rc.2"
-source = "git+https://github.com/risc0/risc0.git#59297ead6aed1e4194c65cfcce1642b17b6177d1"
+source = "git+https://github.com/risc0/risc0.git?rev=9a3865a#9a3865a5a54ec1e974250c785545a6bf727f6949"
 dependencies = [
  "bytemuck",
  "impl-trait-for-tuples",
@@ -303,7 +303,7 @@ dependencies = [
 [[package]]
 name = "risc0-zeroio-derive"
 version = "1.0.0-rc.2"
-source = "git+https://github.com/risc0/risc0.git#59297ead6aed1e4194c65cfcce1642b17b6177d1"
+source = "git+https://github.com/risc0/risc0.git?rev=9a3865a#9a3865a5a54ec1e974250c785545a6bf727f6949"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -313,7 +313,7 @@ dependencies = [
 [[package]]
 name = "risc0-zkp"
 version = "1.0.0-rc.2"
-source = "git+https://github.com/risc0/risc0.git#59297ead6aed1e4194c65cfcce1642b17b6177d1"
+source = "git+https://github.com/risc0/risc0.git?rev=9a3865a#9a3865a5a54ec1e974250c785545a6bf727f6949"
 dependencies = [
  "anyhow",
  "bytemuck",
@@ -330,7 +330,7 @@ dependencies = [
 [[package]]
 name = "risc0-zkvm"
 version = "1.0.0-rc.2"
-source = "git+https://github.com/risc0/risc0.git#59297ead6aed1e4194c65cfcce1642b17b6177d1"
+source = "git+https://github.com/risc0/risc0.git?rev=9a3865a#9a3865a5a54ec1e974250c785545a6bf727f6949"
 dependencies = [
  "anyhow",
  "bytemuck",
@@ -347,7 +347,7 @@ dependencies = [
 [[package]]
 name = "risc0-zkvm-platform"
 version = "1.0.0-rc.2"
-source = "git+https://github.com/risc0/risc0.git#59297ead6aed1e4194c65cfcce1642b17b6177d1"
+source = "git+https://github.com/risc0/risc0.git?rev=9a3865a#9a3865a5a54ec1e974250c785545a6bf727f6949"
 
 [[package]]
 name = "serde"
