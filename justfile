@@ -7,7 +7,7 @@ prove:
     cd prover && cargo run --release
 
 build:
-    cd verifier && cargo odra build -b casper
+    cd verifier && cargo odra build -b   casper
 
 test-mock-vm:
     cd verifier && cargo odra test
@@ -34,7 +34,7 @@ call-verify VERIFIER_HASH:
         --secret-key {{SECRET_KEY}} \
         --session-hash {{VERIFIER_HASH}} \
         --session-entry-point "verify" \
-        --payment-amount 5000000000000
+        --payment-amount 500000000000
 
 clean:
     cd prover && cargo clean

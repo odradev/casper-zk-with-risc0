@@ -5,3 +5,6 @@ keys/secret_key.pem
 risc0
 deploy
 .idea
+data/journal
+data/seal
+data/method
