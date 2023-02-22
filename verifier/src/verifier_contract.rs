@@ -1,8 +1,9 @@
 use odra::{Variable};
+use blake2b::HashSuiteBlake2b;
 use risc0_zkvm::{Receipt};
 
 // Import the proof and the method.
-const METHOD_ID: &[u8] = &include!("../../data/method");
+const METHOD_ID: &[u32] = &include!("../../data/method");
 const SEAL: &[u32] = &include!("../../data/seal");
 const JOURNAL: &[u32] = &include!("../../data/journal");
 
@@ -32,8 +33,9 @@ impl Verifier {
 }
 
 // The verification method. It constructs new Receipt and verifies it.
-fn verify(journal: &[u32], seal: &[u32], method_id: &[u8]) -> String {
-    let result = Receipt::new(&journal, &seal).verify(method_id);
+fn verify(journal: &[u32], seal: &[u32], method_id: &[u32]) -> String {
+    let method: [u32; 8] = [473203699,2556862419,3889962954,2376804667,2463669269,4258584453,4015235679,2598640211];
+    let result = Receipt::new(&journal, &seal).verify_with_hash::<HashSuiteBlake2b, _>(&method);
 
     match result {
         Ok(()) => String::from("Ok"),

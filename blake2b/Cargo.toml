@@ -1,0 +1,12 @@
+[package]
+name = "blake2b"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+risc0-core = { path = "../../risc0/risc0/risc0/core", default-features = false }
+risc0-zkp = { path = "../../risc0/risc0/risc0/zkp", default-features = false }
+risc0-zkvm = { path = "../../risc0/risc0/risc0/zkvm", default-features = false }
+casper-contract = "1.4.4"

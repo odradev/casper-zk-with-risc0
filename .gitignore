@@ -7,3 +7,4 @@ keys/public_key.pem
 keys/secret_key.pem
 risc0
 deploy
+.idea
